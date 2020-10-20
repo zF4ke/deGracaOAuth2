@@ -1,0 +1,46 @@
+.app header {
+    height: 70px;
+    
+    background: #424552;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.13);
+    
+    position: fixed;
+    width: 100vw;
+    top: 0;
+
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+    z-index: 100;
+}
+
+.app header .logo {
+    height: 65px;
+
+    margin-top: 40px
+}
+
+.app header a {
+    margin-top: 12px;
+        
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 34px;
+    text-decoration: none;
+
+    transition: color 0.2s;
+
+
+    color: #A5A1A1;
+}
+
+.app header a:hover {
+    color: #d8d4d4;
+}
+
+.app header a:focus {
+    color: #f0f0f0;
+}
