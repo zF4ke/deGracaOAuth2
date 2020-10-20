@@ -1,3 +1,5 @@
+<!-- by zF4ke -->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,45 +8,60 @@
     <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Viga&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./styles/global.css">
-    <link rel="stylesheet" href="./styles/app.css">
+    <link rel="stylesheet" href="./styles/pages/app.css">
     <title>De Graça! • Tudo isso é para você.</title>
 </head>
 <body>
     <div class="app">
         <section id="home">
-            <header>
-                <a href="#home">Início</a>
-                <a href="#commands">Comandos</a>
-                <img src="./images/logo.png" alt="Logo de Graca" class="logo">
-                <a href="#rewards">Benefícios</a>
-                <a href="/auth">Entrar</a>
-            </header>
+            <%- include('partials/header') -%>
             <div class="heroInner">
-                <h1 class="title">
+                <h1 class="heroInner-title">
                     Receba seus prêmios e recompensas!
                 </h1>
-                <h2 class="subtitle">
+                <h2 class="heroInner-subtitle">
                     Oferemos items grátis no Discord, Steam, EpicStore, Minecraft e muito mais!
                 </h2>
-                <div class="buttons">
-                    <a class="login" href="/auth">
+                <div class="heroInner-buttons">
+                    <a class="heroInner-login" href="/auth">
                         <img src="./images/discord-logo.svg" alt="Discord Logo">
                         Login
                     </a>
-                    <a class="extra" href="#rewards">
+                    <a class="heroInner-extra" href="#rewards">
                         Benefícios
                     </a>
                 </div>
             </div>
         </section>
-        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>.
+        <section id="commands">
+            <div class="commandsInner">
+                <img src="./images/comandos-preview.png" alt="Commands Preview">
+                <div class="commandsInner-text">
+                    <h2 class="commandsInner-title">Escolha o que quer</h2>
+                    <p class="commandsInner-subtitle">Oferecemos comandos para varios serviços na internet para que você sempre tenha a chance de escolher o seu preferido.</p>
+                </div>
+            </div>
+        </section>
+        <section id="rewards">
+            <div class="rewardsInner">
+                <div class="rewardsInner-text">
+                    <h2 class="rewardsInner-title">Entrega garantida</h2>
+                    <p class="rewardsInner-subtitle">Receba o produto no mesmo momento em que digitou o comando e sem esperas!</p>
+                </div>
+                <img src="./images/rewards-preview.png" alt="Rewards Preview">
+            </div>
+        </section>
+        <section id="login">
+            <a class="lastlogin" href="auth/">
+                Clique para fazer login!
+            </a>
+        </section>
+        <footer>
+            <p class="copyright">© 2020 Todos os direitos reservados.</p>
+            <p class="credits">Made with ❤️ by zF4ke#8556</p>
+        </footer>
     </div>
 </body>
 </html>
 
-<!-- Começou a parte dificil, oficialmente, pq eu sou ruim em design vou sofrer ;-; -->
+<!-- by zF4ke -->
