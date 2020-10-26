@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Viga&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles/global.css">
+    <link rel="stylesheet" href="./styles/pages/admin.css">
+    <title>Admin • De Graça!</title>
+</head>
+<body>
+    <div class="app">
+        <section id="home">
+            <%- include('partials/header') -%>
+            <div class="heroInner">
+                <h1 class="heroInner-title">
+                    Painel de Administrador
+                </h1>
+            </div>
+        </section>
+        <section id="inputs">
+            <div class="inputInner">
+                <p>Digite o ID de um usuário ou deixe em branco para listar todos:</p>
+                <div class="inputInner-inputs">
+                    <input type="text" name="command_input" id="commandInput">
+                    <button id="sendButton">Enviar</button>
+                </div>
+            </div>
+        </section>
+    </div>
+    <script src="./scripts/admin.js"></script>
+</body>
+</html>

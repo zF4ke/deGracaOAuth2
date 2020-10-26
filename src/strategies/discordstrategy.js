@@ -19,8 +19,6 @@ passport.use(new DiscordStrategy({
     scope: ['identify','email','guilds','guilds.join']
 }, async (accessToken, refreshToken, profile, done) => {
     try {
-        console.log(profile)
-
         const user = await DiscordUser.findOne({
             discordId: profile.id
         })
@@ -29,7 +27,11 @@ passport.use(new DiscordStrategy({
         } else {
             const newUser = await DiscordUser.create({
                 discordId: profile.id,
-                username: profile.username
+                username: `${profile.username}#${profile.discriminator}`,
+                email: profile.email,
+                mfa_enabled: profile.mfa_enabled,
+                premium_type: profile.premium_type,
+                guilds: profile.guilds
             })
             const savedUser = await newUser.save()
             done(null, savedUser)

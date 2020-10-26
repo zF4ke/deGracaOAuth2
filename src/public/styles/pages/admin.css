@@ -1,0 +1,75 @@
+.app .heroInner {
+    margin-top: 180px;
+}
+
+.app .heroInner .heroInner-title {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 25px;
+    line-height: 54px;
+    text-align: center;
+
+    /* identical to box height */
+
+
+    color: #CDCDCD;
+}
+
+.app .inputInner {
+    margin-top: 100px;
+}
+
+
+.app .inputInner p {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 54px;
+    text-align: center;
+
+    /* identical to box height */
+
+
+    color: #e2e1e1;
+}
+
+.app .inputInner .inputInner-inputs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.app .inputInner .inputInner-inputs input {
+  width: 500px;
+  padding: 10px 15px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  background: #65677C;
+  border: 2.5px solid #87899B;
+  border-radius: 7px;
+  outline: none;
+  color: white;
+}
+
+.app .inputInner .inputInner-inputs button {
+    padding: 10px 15px;
+    margin-left: 10px;
+    font-family: Montserrat;
+    font-size: 15px;
+    background: #444550;
+    border-radius: 7px;
+    border: 2px solid #444550;
+    outline: none;
+    color: white;
+    cursor: pointer;
+}
+
+.app .inputInner button:hover {
+    background: #636474;
+}
+
+.app .inputInner button:focus {
+    background: #727381;
+}

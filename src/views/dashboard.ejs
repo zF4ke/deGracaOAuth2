@@ -1,17 +1,79 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="app.css">
-    <title>aaaaaaaaaaa</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Viga&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles/global.css">
+    <link rel="stylesheet" href="./styles/pages/dashboard.css">
+    <title>Dashboard • De Graça!</title>
 </head>
 <body>
     <div class="app">
-        <h2>BBBBBBBBBBBB</h2>
+        <section id="home">
+            <%- include('partials/header') -%>
+            <div class="heroInner">
+                <h1 class="heroInner-title">
+                    Painel de Controlo
+                </h1>
+                <h2 class="heroInner-subtitle">Seja bem vindo, <strong><%= username %></strong>!</h2>
+            </div>
+        </section>
+        <section id="rewards">
+            <div class="rewardsInner">
+                <div class="rewards-options">
+                    <div class="rewards-options-up">
+                        <div class="option option-1" onclick="location.href='#commands'">
+                        <img src="./images/steam-logo.png" alt="Steam Logo">
+                        </div>
+                        <div class="option option-2" onclick="location.href='#commands'">
+                            <img src="./images/epicgames-logo.png" alt="EpicGames Logo">
+                        </div>
+                        <div class="option option-3" onclick="location.href='#commands'">
+                            <img src="./images/redesky-logo.png" alt="RedeSky Logo">
+                        </div>
+                        <div class="option option-4" onclick="location.href='#commands'">
+                            <img src="./images/minecraft-logo.png" alt="Minecraft Logo">
+                        </div>
+                    </div>
+                    <div class="rewards-options-down">
+                        <div class="option option-5" onclick="location.href='#commands'">
+                            <img src="./images/nitro-logo.png" alt="Nitro Logo">
+                        </div>
+                        <div class="option option-6" onclick="location.href='#commands'">
+                            <img src="./images/boost-logo.png" alt="Boost Logo">
+                        </div>
+                        <div class="option option-7" onclick="location.href='#commands'">
+                            <img src="./images/netflix-logo.png" alt="Netflix Logo">
+                        </div>
+                        <div class="option option-8" onclick="location.href='#commands'">
+                            <img src="./images/crunchyroll-logo.png" alt="Crunchyroll Logo">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+            .
+        </section>
     </div>
+    <script src="./scripts/dashboard.js"></script>
 </body>
 </html>
 
-<!-- Começou a parte dificil, oficialmente, pq eu sou ruim em design vou sofrer ;-; -->
+<!-- by zF4ke -->

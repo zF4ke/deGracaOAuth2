@@ -17,8 +17,9 @@
 
 .app header .logo {
     height: 65px;
+    margin-top: 40px;
 
-    margin-top: 40px
+    cursor: pointer;
 }
 
 .app header a {
