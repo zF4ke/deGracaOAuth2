@@ -39,6 +39,11 @@ app.use(passport.session())
 app.use('/auth', authRoute)
 app.use('/dashboard', dashboardRoute)
 
+/* Private Use */
+const adminRoute = require('./routes/admin')
+app.use('/admin', adminRoute)
+/* =========== */
+
 app.listen(PORT, () => {
     console.log(`Listening to requests on port ${PORT}`)
 })
