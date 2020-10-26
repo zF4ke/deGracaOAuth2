@@ -16,11 +16,11 @@ function isAdmin(req, res, next) {
     }
 }
 
-router.get('/', /* isAdmin, */ (req, res, next) => {
+router.get('/', isAdmin, (req, res, next) => {
     res.render('admin')
 })
 
-router.get('/user', /* isAdmin, */ (req, res, next) => {
+router.get('/user', isAdmin, (req, res, next) => {
     try {
         DiscordUser.find({}, function (err, users) {
             if(err) {
