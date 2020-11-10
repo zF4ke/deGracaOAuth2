@@ -1,5 +1,5 @@
 .app header {
-    height: 70px;
+    height: 6vw;
     
     background: #424552;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.13);
@@ -16,20 +16,21 @@
 }
 
 .app header .logo {
-    height: 65px;
-    margin-top: 40px;
+    height: 25px;
+    margin-top: 20px;
 
     cursor: pointer;
 }
 
+
 .app header a {
-    margin-top: 12px;
+    margin-top: 2px;
         
     font-family: Montserrat;
     font-style: normal;
     font-weight: normal;
-    font-size: 20px;
-    line-height: 34px;
+    font-size: 2vw;
+    line-height: 10px;
     text-decoration: none;
 
     transition: color 0.2s;
@@ -44,4 +45,38 @@
 
 .app header a:focus {
     color: #f0f0f0;
+}
+
+@media screen and (min-width: 700px) {
+    .app header .logo {
+        height: 45px;
+        margin-top: 35px;
+    }
+
+    .app header {
+        height: 3.5vw;
+    }
+
+    .app header a {
+        font-size: 1.1vw;
+        margin-top: 12px;
+        line-height: 34px;
+
+    }
+}
+
+@media screen and (min-width: 1400px) {
+    .app header .logo {
+        height: 65px;
+        margin-top: 40px;
+    }
+}
+
+@media screen and (min-width: 2000px) {
+    .app header .logo {
+        height: 100px;
+        margin-top: 65px;
+    
+        cursor: pointer;
+    }
 }

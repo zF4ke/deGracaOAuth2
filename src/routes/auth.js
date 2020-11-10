@@ -8,6 +8,7 @@ router.get('/redirect', passport.authenticate('discord', {
 }), (req, res) => {
     res.send(req.user)
 })
+
 router.get('/logout', (req, res) => {
     if(req.user) {
         req.logout()

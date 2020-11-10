@@ -2,22 +2,27 @@ const router = require('express').Router()
 const passport = require('passport')
 const DiscordUser = require('../database/models/DiscordUser')
 
-function isAdmin(req, res, next) {
+function isAdmin(req, res, next, action) {
     let adminIDs = ["676156690395037713"]
 
     if(req.user) {
+        console.log(action)
         if(adminIDs.indexOf(req.user.discordId) > -1) {
-            next()
+            if(action == 1) {
+                res.render('admin')
+            } else {
+                next()
+            }
         } else {
-            res.redirect('/')
+            res.redirect('/auth')
         }
     } else {
-        res.redirect('/')
+        res.redirect('/auth')
     }
 }
 
-router.get('/', isAdmin, (req, res, next) => {
-    res.render('admin')
+router.get('/',  (req, res, next) => {
+    isAdmin(req, res, next, 1)
 })
 
 router.get('/user', isAdmin, (req, res, next) => {

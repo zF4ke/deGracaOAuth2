@@ -13,6 +13,10 @@
     <div class="app">
         <section id="home">
             <%- include('partials/header') -%>
+            <div class="alert">
+                <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
+                    <strong>Parabéns!</strong> A sua recompensa foi entregue com sucesso. 
+              </div>
             <div class="heroInner">
                 <h1 class="heroInner-title">
                     Painel de Controlo
@@ -24,53 +28,142 @@
             <div class="rewardsInner">
                 <div class="rewards-options">
                     <div class="rewards-options-up">
-                        <div class="option option-1" onclick="location.href='#commands'">
+                        <div class="option option-1 steam-optionMain" onclick="location.href='#commands'">
                         <img src="./images/steam-logo.png" alt="Steam Logo">
                         </div>
-                        <div class="option option-2" onclick="location.href='#commands'">
+                        <div class="option option-2 epicgames-optionMain" onclick="location.href='#commands'">
                             <img src="./images/epicgames-logo.png" alt="EpicGames Logo">
                         </div>
-                        <div class="option option-3" onclick="location.href='#commands'">
+                        <div class="option option-3 redesky-optionMain" onclick="location.href='#commands'">
                             <img src="./images/redesky-logo.png" alt="RedeSky Logo">
                         </div>
-                        <div class="option option-4" onclick="location.href='#commands'">
+                        <div class="option option-4 minecraft-optionMain" onclick="location.href='#commands'">
                             <img src="./images/minecraft-logo.png" alt="Minecraft Logo">
                         </div>
                     </div>
                     <div class="rewards-options-down">
-                        <div class="option option-5" onclick="location.href='#commands'">
+                        <div class="option option-5 nitro-optionMain" onclick="location.href='#commands'">
                             <img src="./images/nitro-logo.png" alt="Nitro Logo">
                         </div>
-                        <div class="option option-6" onclick="location.href='#commands'">
+                        <div class="option option-6 boost-optionMain" onclick="location.href='#commands'">
                             <img src="./images/boost-logo.png" alt="Boost Logo">
                         </div>
-                        <div class="option option-7" onclick="location.href='#commands'">
+                        <div class="option option-7 netflix-optionMain" onclick="location.href='#commands'">
                             <img src="./images/netflix-logo.png" alt="Netflix Logo">
                         </div>
-                        <div class="option option-8" onclick="location.href='#commands'">
+                        <div class="option option-8 crunchyroll-optionMain" onclick="location.href='#commands'">
                             <img src="./images/crunchyroll-logo.png" alt="Crunchyroll Logo">
                         </div>
                     </div>
                 </div>
+                <p class="rewards-description">Complete os campos abaixo da forma correta para resgatar as suas recompensas!</p>
             </div>
-            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-            .
         </section>
+        <section id="commands">
+            <div class="select-input">
+                <div class="dropdown-separator0">
+                </div>
+                <div class="dropdown-option">
+                    <button class="mainbutton dropdown-option-mainbutton">
+                        <img src="./images/steam-logo.png" alt="" class="steam-image">
+                    </button>
+                    <div class="dropdown-option-content">
+                        <div class="firstline">
+                            <button class="steam-button blocked">
+                                <img src="./images/steam-logo.png" alt="" class="steam-image">
+                            </button>
+                            <button class="epicgames-button">
+                                <img src="./images/epicgames-logo.png" alt="" class="epicgames-image">
+                            </button>
+                            <button class="nitro-button">
+                                <img src="./images/nitro-logo.png" alt="" class="nitro-image">
+                            </button>
+                        </div>   
+                        <div class="secondline">
+                            <button class="boost-button">
+                                <img src="./images/boost-logo.png" alt="" class="boost-image">
+                            </button>
+                            <button class="minecraft-button">
+                                <img src="./images/minecraft-logo.png" alt="" class="minecraft-image">
+                            </button>
+                            <button class="redesky-button">
+                                <img src="./images/redesky-logo.png" alt="" class="redesky-image">
+                            </button>
+                        </div>
+                        <div class="thirdline">
+                            <button class="netflix-button">
+                                <img src="./images/netflix-logo.png" alt="" class="netflix-image">
+                            </button>
+                            <button class="crunchyroll-button">
+                                <img src="./images/crunchyroll-logo.png" alt="" class="crunchyroll-image">
+                            </button>
+                            <button class="blocked disabled">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="dropdown-separator"></div>
+                <div class="dropdown-style1">
+                    <button class="mainbutton dropdown-style1-mainbutton">Selecionar</button>
+                    <div class="dropdown-style1-content">
+                        <button class="steam dropdown-style1-button">Jogo</button>
+                        <button class="steam dropdown-style1-button">Presente</button>
+                        <button class="epicgames dropdown-style1-button">Jogo</button>
+                        <button class="epicgames dropdown-style1-button">Skin</button>
+                        <button class="nitro dropdown-style1-button">Gaming</button>
+                        <button class="nitro dropdown-style1-button">Classic</button>
+                        <button class="boost dropdown-style1-button">Nivel 1</button>                        
+                        <button class="boost dropdown-style1-button">Nivel 1</button>
+                        <button class="boost dropdown-style1-button">Nivel 2</button>
+                        <button class="boost dropdown-style1-button">Nivel 3</button>
+                        <button class="minecraft dropdown-style1-button">Semi Acesso</button>
+                        <button class="minecraft dropdown-style1-button">Full Acesso</button>
+                        <button class="redesky dropdown-style1-button">VIP</button>
+                        <button class="redesky dropdown-style1-button">MVP</button>
+                        <button class="redesky dropdown-style1-button">MVP+</button>
+                        <button class="netflix dropdown-style1-button">Base</button>
+                        <button class="netflix dropdown-style1-button">Standard</button>
+                        <button class="netflix dropdown-style1-button">Premium</button>
+                        <button class="crunchyroll dropdown-style1-button">Fan</button>
+                        <button class="crunchyroll dropdown-style1-button">Mega Fan</button>
+                        <button class="crunchyroll dropdown-style1-button">Super Fan Pack</button>
+                </div>
+            </div>
+            <div class="dropdown-separator"></div>
+            <div class="dropdown-style2">
+                <button class="mainbutton dropdown-style2-mainbutton">Selecionar</button>
+                <div class="dropdown-style2-content">
+                    <button class="steam dropdown-style2-button">Mensagem Privada</button>
+                    <button class="steam dropdown-style2-button">Automático</button>
+                    <button class="epicgames dropdown-style2-button">Mensagem Privada</button>
+                    <button class="epicgames dropdown-style2-button">Automático</button>
+                    <button class="nitro dropdown-style2-button">Código de Presente</button>
+                    <button class="nitro dropdown-style2-button">Mensagem Privada</button>
+                    <button class="boost dropdown-style2-button">Automático</button>                        
+                    <button class="minecraft dropdown-style2-button">Mensagem Privada</button>
+                    <button class="redesky dropdown-style2-button">Automático</button>
+                    <button class="netflix dropdown-style2-button">Mensagem Privada</button>                        
+                    <button class="crunchyroll dropdown-style2-button">Mensagem Privada</button>
+                </div>
+            </div>  
+            <div class="dropdown-separator"></div>
+            <input class="username" type="text" placeholder="username" maxlength="32">
+            <div class="username-separator-discriminator">
+                <span>#</span>
+                <input class="discriminator" type="number" onkeyup='enforceMinMax(this)' placeholder="0000" min="0" max="9999">
+            </div>
+            <div class="continue">
+                <button class="continue-button" type="submit">Continuar&nbsp;</button>
+            </div>
+        </section>
+        <section class="loritta">
+            
+        </section>
+        <div style="margin-bottom: 300px;"></div>
+        <footer>
+            <p class="copyright">© 2020 Todos os direitos reservados.</p>
+            <p class="credits">Made with ❤️ by zF4ke#8556</p>
+        </footer>
     </div>
     <script src="./scripts/dashboard.js"></script>
 </body>
