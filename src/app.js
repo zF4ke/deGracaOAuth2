@@ -35,6 +35,7 @@ app.use(session({
     })
 }))
 
+
 app.set('view engine','ejs')
 app.set('views', path.join(__dirname, 'views'))
 app.use(express.static(path.join(__dirname, 'public')))
@@ -55,6 +56,7 @@ app.use('/admin', adminRoute)
 
 app.listen(PORT, () => {
     console.log(`Listening to requests on port ${PORT}`)
+    console.log(process.env.VERSION)
 })
 
 app.get('/', (req, res) => {
