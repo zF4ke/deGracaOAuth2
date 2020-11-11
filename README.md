@@ -13,7 +13,7 @@
   <h3 align="center">deGracaOAuth2</h3>
 
 
-<p align="center">Site com integração do OAuth2 do Discord</p>
+<p align="center">Site com integração do Discord OAuth2</p>
 
 ## Contacto
 
