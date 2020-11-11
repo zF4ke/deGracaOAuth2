@@ -120,11 +120,14 @@ setInterval("isReady()", 100)
 const alertBox = document.querySelector('.alert')
 
 continueButton.addEventListener('click', () => {
+
     if(!continueButton.classList.contains('active')) return;
     alertBox.style.display = 'block';
 
     const url = getURL()
-    window.open(url, '_blank');
+    setTimeout(() => {
+        window.open(url, '_blank')
+    }, 1500)
 })
 
 function getURL() {
