@@ -40,7 +40,7 @@ router.get('/user', isAdmin, (req, res, next) => {
 
 })
 
-router.get('/user/:id', /* isAdmin, */ (req, res, next) => {
+router.get('/user/:id', isAdmin, (req, res, next) => {
     try {
         DiscordUser.findOne({
             discordId: req.params.id
