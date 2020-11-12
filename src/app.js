@@ -12,6 +12,8 @@ const path = require('path')
 const mongoose = require('mongoose')
 const cors = require('cors')
 
+const PageRequest = require('./database/models/PageRequest')
+
 // MongoDB
 
 db.then(() => console.log('Connected to MongoDB (degracaauth)')).catch(err => console.error(err))
@@ -36,6 +38,7 @@ app.use(session({
 }))
 
 
+app.enable('trust proxy') 
 app.set('view engine','ejs')
 app.set('views', path.join(__dirname, 'views'))
 app.use(express.static(path.join(__dirname, 'public')))
@@ -61,4 +64,26 @@ app.listen(PORT, () => {
 
 app.get('/', (req, res) => {
     res.render('home')
+
+    const forwarded = req.headers['x-forwarded-for']
+    const ip = forwarded ? forwarded.split(/, /)[0] : req.connection.remoteAddress;
+    storeIpAddress(ip)
 })
+
+async function storeIpAddress(ipAddress) {
+    try {
+        const request = await PageRequest.findOne({
+            ipAddress: ipAddress
+        })
+        if(request) {
+            return
+        } else {
+            const newRequest = await PageRequest.create({
+                ipAddress: ipAddress
+            })
+            const savedRequest = await newRequest.save()
+        }
+    } catch (err) {
+        console.log(err)
+    }
+}
