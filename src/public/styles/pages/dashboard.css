@@ -121,6 +121,10 @@
     color: #CDCDCD;
 }
 
+.app .rewardsInner .rewards-description-mobile {
+    display: none;
+}
+
 .app #commands {
     position: relative;
     display: flex;
@@ -438,6 +442,9 @@
     background-color: #41AF60;
 }
 
+.margin {
+    margin-bottom: 300px;
+}
 
 footer {
     position: relative;
@@ -459,4 +466,495 @@ footer p {
     line-height: 33px;
 
     color: #A8A7A7;
+}
+
+@media (pointer:none), (pointer:coarse) {
+    .pre {
+        display: none;
+    }
+
+    .alert {
+        padding: 20px;
+        background-color: #4CAF50;
+        color: white;
+        opacity: 1;
+        margin-top: 2.5vw;
+        transition: opacity 0.6s;
+        z-index: 1;
+        position: fixed;
+        width: 100vw;
+        font-family: Montserrat;
+        text-align: center;
+        display: none;
+        height: 15px;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 10px; 
+    
+    }
+
+    .alert strong {
+        margin-right: 2px;
+    }
+    
+    /* The close button */
+    .closebtn {
+        margin-left: 15px;
+        color: white;
+        font-weight: bold;
+        float: right;
+        font-size: 15px;
+        line-height: 20px;
+        cursor: pointer;
+        transition: 0.3s;
+    }
+      
+      /* When moving the mouse over the close button */
+    .closebtn:hover {
+        color: black;
+    }
+    
+    .app .heroInner {
+        margin-top: 60px;
+    }
+    
+    .app .heroInner .heroInner-title {
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 15px;
+        line-height: 20px;
+        text-align: center;
+    
+    
+    
+        color: #CDCDCD;
+    }
+    
+    .app .heroInner .heroInner-subtitle {
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 15px;
+        line-height: 20px;
+        text-align: center;
+    
+    
+    
+        color: #e2e1e1;
+    }
+    
+    
+    .app .rewardsInner {
+        margin-bottom: 150px;
+    }
+    
+    .app .rewardsInner .rewards-options-up {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .app .rewardsInner .rewards-options-down {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .app .rewardsInner .rewards-options .option {
+        position: relative;
+        width: 50px;
+        height: 50px;
+    
+        margin: 10px;
+        margin-top: 20px;
+    
+        background: #65677C;
+        border-radius: 10px;
+    
+        cursor: pointer;
+    }
+    
+    .app .rewardsInner .rewards-options .option:hover {
+        background: #87899b;
+    }
+    
+    .app .rewardsInner .rewards-options .option img {
+        position: absolute;
+        width: 7vw;
+    
+        top: 50%; 
+        right: 50%;
+        transform: translate(50%,-50%);
+    
+    }
+    
+    .app .rewardsInner .rewards-options .option-5 img {
+        width: 8vw;
+    }
+
+    .app .rewardsInner .rewards-description {
+        display: none;
+    }
+    
+    .app .rewardsInner .rewards-description-mobile {
+        display: block;
+
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 15px;
+        line-height: 20px;
+        text-align: center;
+
+        margin: 20px;
+    
+        color: #CDCDCD;
+    }
+    
+    .app #commands {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        display: none;
+    }
+    
+    .app #commands .select-input {
+        position: relative;
+        width: 80px;
+        border-radius: 25px;
+        background-color: #C4C4C4;
+        display: flex;
+    }
+    
+    .app #commands .select-input .dropdown-option {
+        position: relative;
+        display: inline-block;
+    }
+    
+    .app #commands .select-input .dropdown-option .mainbutton {
+        background-color: #5C5F7B;
+        color: white;
+        font-size: 16px;
+        outline: none;
+        border: none;
+        cursor: pointer;
+        width: 70px;
+        height: 60px;
+        padding-top: 3px;
+        transition: background-color 0.15s ease-in;
+    }
+    
+    .app #commands .select-input .dropdown-option-content {
+        position: absolute;
+        display: flex;
+        z-index: 1;
+        transition: visibility 0s 2s, opacity 0.2s ease-out;
+        opacity: 0;
+        visibility: hidden;
+    }
+    
+    .app #commands .select-input .dropdown-option-content button {
+        color: black;
+        outline: none;
+        border: none;
+        width: 70px;
+        height: 70px;
+        text-decoration: none;
+        display: block;
+        background-color: #52556d;
+        transition: background-color 0.15s ease-in;
+        cursor: pointer;
+    }
+    
+    .app #commands .select-input .dropdown-option-content .firstline button:last-child {
+        border-radius: 0px 0px 0px 20px;
+    }
+    
+    .app #commands .select-input .dropdown-option-content .thirdline button:last-child {
+        border-radius: 0px 0px 20px 0px;
+    }
+    
+    .app #commands .select-input .dropdown-option-content .blocked img {
+        opacity: 0.5;
+    }
+    
+    .app #commands .select-input .dropdown-option-content .blocked:hover {
+        background-color: #52556d;
+        cursor: not-allowed;
+    }
+    
+    /* .app #commands .select-input .dropdown-option-content .steam {
+        display: none;
+    } */
+    
+    
+    .app #commands .select-input .dropdown-option img {
+        width: 40px;
+    }
+    
+    /* Change color of dropdown links on hover */
+    .app #commands .select-input .dropdown-option-content button:hover {
+        background-color: #6a6d88;
+    }
+    
+    /* Show the dropdown menu on hover */
+    .app #commands .select-input .dropdown-option:hover .dropdown-option-content {
+        opacity: 1;
+        visibility: visible;
+        transition: opacity 0.2s ease-in;
+    }
+    
+    /* Change the background color of the dropdown button when the dropdown content is shown */
+    .app #commands .select-input .dropdown-option .mainbutton:hover  {
+        background-color: #6a6d88;
+    }
+    
+    .app #commands .select-input .dropdown-separator {
+        background-color: #C4C4C4;
+        height: 60px;
+        width: 17px;
+    
+    }
+    
+    .app #commands .select-input .dropdown-separator0 {
+        background-color: #5C5F7B;
+        font-family: Montserrat;
+        color: #EEEEEE;
+        font-size: 22px;
+        outline: none;
+        border: none;
+        cursor: pointer;
+        padding-top: 3px;
+        height: 60px;
+        width: 25px;
+        margin-right: -5px;
+        border-radius: 25px 0 0 25px;
+        transition: background-color 0.15s ease-in;
+    }
+    
+    .app #commands .select-input .dropdown-style1 .mainbutton {
+        background-color: #879097;
+        font-family: Montserrat;
+        color: #EEEEEE;
+        font-size: 18px;
+        outline: none;
+        border: none;
+        cursor: pointer;
+        padding-top: 3px;
+        height: 60px;
+        width: 120px;
+        transition: background-color 0.15s ease-in;
+    }
+    
+    .app #commands .select-input .dropdown-style1-content {
+        position: absolute;
+        z-index: 1;
+        border-radius: 20px;
+        transition: visibility 0s 2s, opacity 0.2s ease-out;
+        opacity: 0;
+        visibility: hidden;
+    }
+    
+    .app #commands .select-input .dropdown-style1-content button {
+        outline: none;
+        border: none;
+        height: 60px;
+        width: 120px;
+        text-decoration: none;
+        display: block;
+        background-color: #6f7981;
+        transition: background-color 0.15s ease-in;
+        cursor: pointer;
+        font-family: Montserrat;
+        color: #EEEEEE;
+        font-size: 16px;
+    }
+    
+    .app #commands .select-input .dropdown-style1-content button:last-child {
+        border-radius: 0px 0px 15px 15px;
+    }
+    
+    /* Change color of dropdown links on hover */
+    .app #commands .select-input .dropdown-style1-content button:hover {
+        background-color: #8e98a1;
+    }
+    
+    /* Show the dropdown menu on hover */
+    .app #commands .select-input .dropdown-style1:hover .dropdown-style1-content {
+        opacity: 1;
+        visibility: visible;
+        transition: opacity 0.2s ease-in;
+    }
+    
+    /* Change the background color of the dropdown button when the dropdown content is shown */
+    .app #commands .select-input .dropdown-style1 .mainbutton:hover  {
+        background-color: #8e98a1;
+    }
+    
+    .app #commands .select-input .dropdown-style2 .mainbutton {
+        background-color:#879097;
+        font-family: Montserrat;
+        color: #EEEEEE;
+        font-size: 18px;
+        outline: none;
+        border: none;
+        cursor: pointer;
+        padding-top: 3px;
+        height: 60px;
+        width: 120px;
+        transition: background-color 0.15s ease-in;
+    }
+    
+    .app #commands .select-input .dropdown-style2-content {
+        position: absolute;
+        z-index: 1;
+        border-radius: 20px;
+        transition: visibility 0s 2s, opacity 0.2s ease-out;
+        opacity: 0;
+        visibility: hidden;
+    }
+    
+    .app #commands .select-input .dropdown-style2-content button {
+        outline: none;
+        border: none;
+        height: 60px;
+        width: 120px;
+        text-decoration: none;
+        display: block;
+        background-color: #6f7981;
+        transition: background-color 0.15s ease-in;
+        cursor: pointer;
+        font-family: Montserrat;
+        color: #EEEEEE;
+        font-size: 16px;
+    }
+    
+    .app #commands .select-input .dropdown-style2-content button:last-child {
+        border-radius: 0px 0px 15px 15px;
+    }
+    
+    /* Change color of dropdown links on hover */
+    .app #commands .select-input .dropdown-style2-content button:hover {
+        background-color: #8e98a1;
+    }
+    
+    /* Show the dropdown menu on hover */
+    .app #commands .select-input .dropdown-style2:hover .dropdown-style2-content {
+        opacity: 1;
+        visibility: visible;
+        transition: opacity 0.2s ease-in;
+    }
+    
+    /* Change the background color of the dropdown button when the dropdown content is shown */
+    .app #commands .select-input .dropdown-style2 .mainbutton:hover  {
+        background-color: #97a2ac;
+    }
+    
+    .app #commands .select-input .username {
+        border: none;
+        outline: none;
+    
+        font-family: Montserrat;
+        font-size: 20px;
+        width: 360px;
+    
+        border-radius: 0px 28px 28px 0px;
+    
+        background-color: #C4C4C4;
+    }
+    
+    .app #commands .select-input .username-separator-discriminator {
+        position: absolute;
+        right: 130px;
+        height: 60px;
+        
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+        border: none;
+        outline: none;
+    
+        color: rgb(78, 77, 77);
+    
+        font-family: Montserrat;
+        font-size: 20px;
+    
+    }
+    
+    .app #commands .select-input .discriminator {
+        border: none;
+        outline: none;
+    
+        font-family: Montserrat;
+        font-size: 20px;
+        margin-right: -10px;
+    
+        color: black;
+    
+        background-color: #C4C4C4;
+    }
+    
+    .app #commands .select-input .continue-button {
+        position: absolute;
+        right: 0;
+        border: none;
+        outline: none;
+        
+        padding: 0px 15px;
+        border-radius: 0px 25px 25px 0px;
+        height: 60px;
+    
+        font-family: Montserrat;
+        font-size: 20px;
+        color: #CACBCC;
+    
+        background-color: #7B7C80;
+    }
+    
+    .app #commands .select-input .active {
+        color: white;
+        background-color: #41AF60;
+        cursor: pointer;
+    }
+    
+    .app #commands .select-input .active:hover {
+        background-color: #48c06a;
+    }
+    
+    .app #commands .select-input .active:focus {
+        background-color: #41AF60;
+    }
+
+    .margin {
+        margin-bottom: 255px;
+    }
+    
+    
+    footer {
+        position: relative;
+        bottom: 0px;
+    
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    
+        background: #424552;
+        height: 35px;
+    }
+    
+    footer p {
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 10px;
+        line-height: 20px;
+    
+        color: #A8A7A7;
+    }
 }

@@ -299,3 +299,316 @@
 
     color: #A8A7A7;
 }
+
+@media (pointer:none), (pointer:coarse) {
+    .app .heroInner {
+        margin-top: 50px;
+    }
+    
+    .app .heroInner .heroInner-title {
+        font-family: Viga;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 15px;
+        line-height: 20px;
+        text-align: center;
+        
+    
+        color: #CDCDCD;
+    }
+    
+    .app .heroInner .heroInner-subtitle {
+        font-family: Viga;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 15px;
+        line-height: 20px;
+        text-align: center;
+        margin-top: 10px;
+        margin-right: 20px;
+        margin-left: 20px;
+    
+        color: #70758A;
+    }
+    
+    .app .heroInner .heroInner-buttons {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    
+        margin-top: 30px
+    }
+    
+    .app .heroInner .heroInner-buttons .heroInner-login {
+        background-image: linear-gradient(90deg, #EC2FF0 0%, rgba(233, 144, 235, 0.78) 100%);
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 13px;
+    
+        font-family: Viga;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 19px;
+        line-height: 30px;
+    
+        text-decoration: none;
+        cursor: pointer;
+    
+        outline: none;
+    
+        width: 120px;
+        height: 40px;
+    
+        color: #FFFFFF;
+    
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    
+        margin-right: 20px;
+        margin-left: 20px;
+
+        border: none;
+    
+        transition: background-image 1s ease-out;  
+    
+    }
+    
+    .app .heroInner .heroInner-buttons .heroInner-login:hover {
+        background-image: linear-gradient(90deg, #ec22c0 0%, rgba(253, 146, 255, 0.78) 100%);
+        border: none
+    }
+    
+    .app .heroInner .heroInner-buttons .heroInner-login:focus {
+        background-image: linear-gradient(90deg, rgba(253, 161, 255, 0.78) 0%, #fb10ff 100%);
+    
+        outline: none;
+        border: none
+    }
+    
+    
+    .app .heroInner .heroInner-buttons .heroInner-login img {
+        height: 25px;
+    }
+    
+    .app .heroInner .heroInner-buttons .heroInner-extra {
+        background: #373843;
+        border: 4px solid #424552;
+        box-sizing: border-box;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 13px;
+    
+        outline: none;
+    
+        font-family: Viga;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 19px;
+    
+        text-decoration: none;
+        text-align: center;
+    
+        width: 120px;
+        height: 40px;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        margin-right: 20px;
+    
+        color: #616471;
+        outline: none;
+    
+        transition: border 0.2s;
+        transition: color 0.2s
+    
+    }
+    
+    .app .heroInner .heroInner-buttons .heroInner-extra:hover {
+        border: 4px solid #595c66;
+        color: #6a6d75;
+    }
+    
+    .app .heroInner .heroInner-buttons .heroInner-extra:focus {
+        border: 4px solid #646670;
+        color: #7c7e86;
+        
+        outline: none;
+    }
+    
+    .app .commandsInner {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    
+        margin-left: 20px;
+        margin-right: 20px;
+
+        margin-top: 100px;
+
+    }
+    
+    .app .commandsInner img {
+    
+        filter: drop-shadow(-7px 7px 4px rgba(0, 0, 0, 0.25));
+        border-radius: 20px;
+    
+        height: 25vw;
+        max-height: 500px;
+    }
+    
+    .app .commandsInner .commandsInner-text {
+        font-family: Viga;
+        text-align: center;
+    
+        margin-left: 7vw;
+        max-width: 600px;
+    }
+    
+    .app .commandsInner .commandsInner-text .commandsInner-title {
+        font-size: 15px;    
+    
+        color: #EAEAEA;
+    }
+    
+    .app .commandsInner .commandsInner-text .commandsInner-subtitle {
+        font-size: 12px;
+        text-align: center;
+    
+        color: #ADACAC;
+    }
+    
+    .app .rewardsInner {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        margin-left: 20px;
+        margin-right: 20px;
+        
+        margin-top: 130px;
+        margin-bottom: 100px;
+    
+        position: relative;
+    }
+    
+    .app .rewardsInner .rewardsInner-text {
+        font-family: Viga;
+        text-align: center;
+    
+        max-width: 450px;
+    
+        margin-right: 7vw;
+    }
+    
+    .app .rewardsInner .rewardsInner-text .rewardsInner-title {
+        font-size: 15px;    
+    
+        color: #EAEAEA;
+    }
+    
+    .app .rewardsInner .rewardsInner-text .rewardsInner-subtitle {
+        font-size: 12px;
+        text-align: center;
+    
+        color: #ADACAC;
+    }
+    
+    .app .rewardsInner img {
+    
+        filter: drop-shadow(-7px 7px 4px rgba(0, 0, 0, 0.25));
+        border-radius: 20px;
+    
+        width: 42vw;
+        max-width: 700px;
+    }
+    
+    .app .rewardsInner .rewardsInner-images .rewardsInner-image-back {
+        filter: drop-shadow(-7px 7px 4px rgba(0, 0, 0, 0.25));
+        border-radius: 20px;
+    
+        width: 38vw;
+        max-width: 700px;
+        
+        right: 0px;
+        top: 100px;
+    
+        z-index: 1;
+    
+        position: absolute;
+    }
+    
+    .app #login {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    
+        margin-bottom: 50px;
+
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    
+    .app #login .lastlogin {
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 13px;
+        background: #373843;
+        border: 4px solid rgb(173, 116, 164);
+    
+        font-family: Viga;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 20px;
+    
+        text-decoration: none;
+        cursor: pointer;
+    
+        outline: none;
+    
+        width: 590px;
+        height: 40px;
+    
+        color: #FFFFFF;
+    
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    
+        margin-right: 0px;
+    
+        transition: background-image 1s ease-out;  
+    
+    }
+    
+    .app #login .lastlogin:hover {
+        border: 4px solid#da89cc;
+    }
+    
+    .app #login .lastlogin:focus {
+    
+        border: 4px solid #da89cc;
+    }
+    
+    .app footer {
+        position: relative;
+        bottom: 0px;
+    
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    
+        background: #424552;
+        height: 35px;
+    }
+    
+    .app footer p {
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 10px;
+        line-height: 20px;
+    
+        color: #A8A7A7;
+    }
+}

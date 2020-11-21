@@ -1,5 +1,5 @@
 .app header {
-    height: 6vw;
+    height: 7.5vw;
     
     background: #424552;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.13);
@@ -29,7 +29,7 @@
     font-family: Montserrat;
     font-style: normal;
     font-weight: normal;
-    font-size: 2vw;
+    font-size: 3vw;
     line-height: 10px;
     text-decoration: none;
 
@@ -58,7 +58,7 @@
     }
 
     .app header a {
-        font-size: 1.1vw;
+        font-size: 1.2vw;
         margin-top: 12px;
         line-height: 34px;
 

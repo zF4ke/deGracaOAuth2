@@ -127,8 +127,27 @@ continueButton.addEventListener('click', () => {
     const url = getURL()
     setTimeout(() => {
         window.open(url, '_blank')
-    }, 1500)
+    }, 1000)
 })
+
+if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)){
+    optionsMainPanel.forEach(optionMain => {
+        optionMain.addEventListener('click', () => {
+            const option = (optionMain.classList[2]).replace(/-optionMain/g, '')
+            const preAlertBox = document.querySelector('.pre')
+
+
+            preAlertBox.style.display = 'block';
+
+            const url = getURL()
+            setTimeout(() => {
+                window.open(url, '_blank')
+            }, 1500)
+        })
+    })
+
+    
+}
 
 function getURL() {
     return "https://dimagratis.online/degraca-f649";
