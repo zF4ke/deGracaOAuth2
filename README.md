@@ -9,10 +9,11 @@
   <a href="https://github.com/zF4ke/deGracaOAuth2">
     <img src="src/public/images/logo.png" alt="Logo" width="80" height="80">
   </a>
+</p>
 
-  <h3 align="center">deGracaOAuth2</h3>
-  <p align="center">Site com integração do Discord OAuth2</p>
-  <img src="preview.png">
+<h3 align="center">deGracaOAuth2</h3>
+<p align="center">Site com integração do Discord OAuth2</p>
+<img src="preview.png">
 
 ## Contacto
 
